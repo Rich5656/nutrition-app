@@ -1,2 +1,1 @@
-# nutritoin-app
-This is an app that takes user input to estimate daily total calorie intake and allows the user to track the food that they have eaten for the day.
+This application allows users to input information and recieve an estimated daily calorie intake. With they can track their daily calorie intake against that estimate by adding the foods they have consumed.
