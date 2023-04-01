@@ -44,7 +44,6 @@ export const GlobalProvider = ({ children }) => {
         })
     }
 
-
     return (<GlobalContext.Provider value={{
         foodsList: state.foodsList,
         dailyLimit: state.dailyLimit,

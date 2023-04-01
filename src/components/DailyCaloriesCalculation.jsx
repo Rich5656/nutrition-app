@@ -9,7 +9,7 @@ export const DailyCaloriesCalculation = () => {
     const [ inches, setInches ] = useState('');
     const [ weight, setWeight ] = useState('');
 
-    // defining the needed elements form the global context
+    // defining the needed function form the global context
     const { addCalorieLimit } = useContext(GlobalContext);
 
     // defining a function to set the daily calories limit
@@ -18,7 +18,7 @@ export const DailyCaloriesCalculation = () => {
 
         const limit = Math.round(1.375 * ( 13.397*(parseFloat(weight)/2.205) ) + ( 4.799 * (parseFloat(feet) + (parseFloat(inches)/12)) * 2.54 ) - ( 5.677 * parseFloat(age) ) + 88.362) + 1000
         
-        // functino call to update the calorie limit in global context
+        // function call to update the calorie limit in global context
         addCalorieLimit(limit);
     }
 

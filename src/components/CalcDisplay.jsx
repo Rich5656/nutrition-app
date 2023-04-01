@@ -2,10 +2,12 @@ import React, { useContext } from 'react';
 import { GlobalContext } from '../context/GlobalContext';
 
 export const CalcDisplay = () => {
+    // needed functions from the global conext
     const { dailyLimit, foodsList, exercise } = useContext(GlobalContext);
-    // calculating total calories consumed based on the foodsList
     
+    // calculating total calories consumed based on the foodsList
     const calsConsumed = foodsList.reduce((acc, item) => (acc += item.calories), 0);
+    
     // calculating reamining calories via other display elements
     const remaining = dailyLimit + exercise - calsConsumed;
     return (
@@ -21,7 +23,6 @@ export const CalcDisplay = () => {
                     <th></th>
                     <th>Remaining Calories</th>
                 </tr>
-
             </thead>
             <tbody>
                 <tr>
@@ -36,6 +37,5 @@ export const CalcDisplay = () => {
             </tbody>
         </table>
     </div>
-
-  )
+    )
 }

@@ -6,17 +6,15 @@ export const Exercise = () => {
     const [ exercise, setExercise ] = useState('');
 
     // bringing in the needed function from the global context
+    // directly invoked in the onClick for the addExerciseButton
     const { addExercise } = useContext(GlobalContext);
-
-    // updating the initial nutrition state to reflect exercise
-    // addExercise(exercise)
 
     return (
         <>
             <h3>Add Exercise</h3>
             <div>
                 <input type="number" max='100000' min='0' onChange={(event) => setExercise(event.target.value)} placeholder='Calories burned during exercise' />
-                <button className='square-btn' onClick={() => addExercise(parseFloat(exercise))} >Add</button>    
+                <button id='addExerciseButton' className='square-btn' onClick={() => addExercise(parseFloat(exercise))} >Add</button>    
             </div>
         </>
     )
