@@ -27,11 +27,11 @@ export const DailyCaloriesCalculation = () => {
         <h3>Calculate Daily Calorie Limit</h3>
         <div className='flex-container'>
           <input className='cal-limit-disp-left' type="number" max='150' min='0' value={age} onChange={(event) => setAge(event.target.value)} placeholder='Age in years' />
-          <input className='cal-limit-disp-right' type="number" max='10' min='0' value={feet} onChange={(event) => setFeet(event.target.value)} placeholder='Height ft' />
+          <input className='cal-limit-disp-right' type="number" max='500' min='0' value={weight} onChange={(event) => setWeight(event.target.value)} placeholder='Weight in lbs' />
         </div>
         <div className='flex-container'>
-          <input className='cal-limit-disp-left' type="number" max='11' min='0' value={inches} onChange={(event) => setInches(event.target.value)} placeholder='Height inches' />
-          <input className='cal-limit-disp-right' type="number" max='500' min='0' value={weight} onChange={(event) => setWeight(event.target.value)} placeholder='Weight in lbs' />   
+          <input className='cal-limit-disp-left' type="number" max='10' min='0' value={feet} onChange={(event) => setFeet(event.target.value)} placeholder='Height ft' />
+          <input className='cal-limit-disp-right' type="number" max='11' min='0' value={inches} onChange={(event) => setInches(event.target.value)} placeholder='Height inches' />   
         </div>
         <button className='square-btn' onClick={event => submitDailyCalories(event)}>Calculate</button> 
     </>

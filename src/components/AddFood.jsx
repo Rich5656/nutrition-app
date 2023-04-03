@@ -7,6 +7,7 @@ export const AddFood = () => {
     const [foodsAPI, setFoodsAPI] = useState(null);
 
     // query the USDA API only on click of the search button to reduce unecessary API requests
+    // this is a read only api key
     const searchFood = event => {
         event.preventDefault();
 
