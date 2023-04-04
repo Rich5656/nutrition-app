@@ -12,9 +12,11 @@ export const FoodsList = () => {
   return (
     <>
         <h3>Foods Consumed Today</h3>
-        <ul>
+        
+          <div className='grid-container'>
             {foodsList.length > 0 ? listedFoods : 'Search a food and add it below.'}
-        </ul>
+          </div>
+        
     </>
   );
 };

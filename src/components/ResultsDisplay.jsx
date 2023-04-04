@@ -28,10 +28,10 @@ export const ResultsDisplay = ({ foodName, nutritionList }) => {
     }
    
     return (
-        <div className='flex-container'>
-          <div className='food-name'>{foodName}</div>
-          <div className='food-cals'>{foodCals.length > 0 ? `${foodCals[0].value} Cal`: 'Na'}</div>
-          <button className='add-food-btn' onClick={submitNewFood}>Add</button>
-        </div>
+        <>
+          <div className='grid-item-food'>{foodName}</div>
+          <div className='grid-item-calories'>{foodCals.length > 0 ? `${foodCals[0].value} Cal`: 'Na'}</div>
+          <button className='grid-item-btn' onClick={submitNewFood}>Add</button>
+        </>
     )
 }

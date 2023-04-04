@@ -31,6 +31,30 @@ body {
 .food-list {
   list-style: none;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 30% 20%;
+  row-gap: 10px;
+}
+
+.grid-item-food {
+  text-align: left;
+}
+
+.grid-item-calories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item-btn {
+  display: block;
+  margin: auto 25% auto 5%;
+  width: 60%;
+  cursor: pointer;
+  border-radius: 12px;
+  text-align: center;
+}
 
 .flex-container {
   display: flex;
