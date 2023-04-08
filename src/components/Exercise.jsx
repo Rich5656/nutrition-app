@@ -14,7 +14,9 @@ export const Exercise = () => {
             <h3>Add Exercise</h3>
             <div>
                 <input type="number" max='100000' min='0' onChange={(event) => setExercise(event.target.value)} placeholder='Calories burned during exercise' />
-                <button id='addExerciseButton' className='square-btn' onClick={() => addExercise(parseFloat(exercise))} >Add</button>    
+                <button id='addExerciseButton' className='square-btn' onClick={exercise ? () => addExercise(parseFloat(exercise)): null}>
+                    Add
+                </button>    
             </div>
         </>
     )

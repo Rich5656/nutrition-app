@@ -7,7 +7,8 @@
 }
 
 body {
-  background-color: #f7f7f7;
+  background-color: #2A4D6E;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,6 +32,7 @@ body {
 .food-list {
   list-style: none;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: 50% 30% 20%;
@@ -39,21 +41,33 @@ body {
 
 .grid-item-food {
   text-align: left;
+  font-size: large;
 }
 
 .grid-item-calories {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: large;
+  font-weight: 250;
 }
 
 .grid-item-btn {
+  background-color: #D4BC6A;
+  color: #041E37;
+  font-size: medium;
+  font-weight: bold;
   display: block;
   margin: auto 25% auto 5%;
-  width: 60%;
+  width: 75px;
   cursor: pointer;
   border-radius: 12px;
   text-align: center;
+  transition: all .1s ease-in;
+}
+
+.grid-item-btn:hover {
+  transform: scale(1.1);
 }
 
 .flex-container {
@@ -82,9 +96,21 @@ body {
 }
 
 .square-btn {
+  background-color: #D4BC6A;
+  color: #041E37;
+  font-size: medium;
+  font-weight: bold;
+  border-radius: 5px;
   margin-top: 1%;
   cursor: pointer;
   margin-bottom: 2%;
+  transition: all .05s ease-in;
+  height: 35px;
+  width: 90px;
+}
+
+.square-btn:hover {
+  transform: scale(1.05);
 }
 
 .add-food-btn {
