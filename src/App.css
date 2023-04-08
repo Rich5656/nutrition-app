@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-/* #root {
-  width: 50%;
-} */
-
 body {
   font-family: 'Courier New', Courier, monospace;
   background-color: #2A4D6E;
@@ -21,8 +17,6 @@ body {
   margin-left: 3%;
   margin-right: 3%;
 }
-
-
 
 h1 {
   text-align: center;
