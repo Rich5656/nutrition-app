@@ -8,9 +8,11 @@ export const Foods = ({ entry }) => {
 
   return (
     <>
-        <div className='grid-item-food'>{entry.food}</div>
-        <div className='grid-item-calories'>{entry.calories} Cal </div>
+      <div className='grid-item-food'>{entry.food}</div>
+      <div className='grid-item-calories'>{entry.calories} Cal </div>
+      <div className='btn-wrapper'>
         <button className='grid-item-btn' onClick={() => deleteFood(entry.id)}>Delete</button>
+      </div>
     </>
   )
 }

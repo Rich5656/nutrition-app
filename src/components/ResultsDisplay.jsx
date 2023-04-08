@@ -31,7 +31,9 @@ export const ResultsDisplay = ({ foodName, nutritionList }) => {
         <>
           <div className='grid-item-food'>{foodName}</div>
           <div className='grid-item-calories'>{foodCals.length > 0 ? `${foodCals[0].value} Cal`: 'Na'}</div>
-          <button className='grid-item-btn' onClick={submitNewFood}>Add</button>
+          <div className='btn-wrapper'>
+            <button className='grid-item-btn' onClick={submitNewFood}>Add</button>
+          </div>
         </>
     )
 }

@@ -25,13 +25,15 @@ export const DailyCaloriesCalculation = () => {
   return (
     <>
         <h3>Calculate Daily Calorie Limit</h3>
-        <div className='flex-container'>
-          <input className='cal-limit-disp-left' type="number" max='150' min='0' value={age} onChange={(event) => setAge(event.target.value)} placeholder='Age in years' />
-          <input className='cal-limit-disp-right' type="number" max='500' min='0' value={weight} onChange={(event) => setWeight(event.target.value)} placeholder='Weight in lbs' />
-        </div>
-        <div className='flex-container'>
-          <input className='cal-limit-disp-left' type="number" max='10' min='0' value={feet} onChange={(event) => setFeet(event.target.value)} placeholder='Height ft' />
-          <input className='cal-limit-disp-right' type="number" max='11' min='0' value={inches} onChange={(event) => setInches(event.target.value)} placeholder='Height inches' />   
+        <div className='calories-calculation-container'>
+          <div className='calculation-column-left'>
+            <input type="number" max='150' min='0' value={age} onChange={(event) => setAge(event.target.value)} placeholder='Age (yrs.)' />
+            <input type="number" max='500' min='0' value={weight} onChange={(event) => setWeight(event.target.value)} placeholder='Weight (lbs.)' />
+          </div>
+          <div className='calculation-column-right'>
+            <input type="number" max='10' min='0' value={feet} onChange={(event) => setFeet(event.target.value)} placeholder='Height (ft.)' />
+            <input type="number" max='11' min='0' value={inches} onChange={(event) => setInches(event.target.value)} placeholder='Height (in.)' />   
+          </div>
         </div>
         <button className='square-btn' onClick={event => submitDailyCalories(event)}>Calculate</button> 
     </>

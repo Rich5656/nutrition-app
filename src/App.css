@@ -1,36 +1,66 @@
-:root {
-  --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-
 * {
   box-sizing: border-box;
 }
 
+/* #root {
+  width: 50%;
+} */
+
 body {
+  font-family: 'Courier New', Courier, monospace;
   background-color: #2A4D6E;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-left: 20%;
+  padding-right: 20%;
   min-height: 100vh;
   margin: 0;
-  font-family: 'Lato', sans-serif;
   margin-left: 3%;
   margin-right: 3%;
 }
 
-.container {
-  margin: 30px auto;
-  width: 350px;
+
+
+h1 {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 10%;
+}
+
+h3 {
+  color: #FFEFAA;
+  text-transform: capitalize;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
 }
 
 .exercise {
   color: #1f9751;
 }
 
-.food-list {
-  list-style: none;
+.calories-calculation-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 10px;
+}
+
+.calculation-column-left {
+  width: 60%;
+}
+
+.calculation-column-right {
+  width: 60%
 }
 
 .grid-container {
@@ -41,15 +71,21 @@ body {
 
 .grid-item-food {
   text-align: left;
-  font-size: large;
+  font-size: medium;
 }
 
 .grid-item-calories {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: large;
-  font-weight: 250;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid-item-btn {
@@ -57,9 +93,8 @@ body {
   color: #041E37;
   font-size: medium;
   font-weight: bold;
-  display: block;
-  margin: auto 25% auto 5%;
   width: 75px;
+  height: 25px;
   cursor: pointer;
   border-radius: 12px;
   text-align: center;
@@ -68,31 +103,6 @@ body {
 
 .grid-item-btn:hover {
   transform: scale(1.1);
-}
-
-.flex-container {
-  display: flex;
-  margin-top: 1%;
-}
-
-.cal-limit-disp-left {
-  margin-right: 5%;
-  width: auto;
-}
-
-.cal-limit-disp-right {
- margin-right: 30%;
-}
-
-.food-name {
-  margin-right: auto;
-}
-
-.food-cals {
-  display: block;
-  margin: auto;
-  margin-left: 5%;
-  margin-right: 5%;
 }
 
 .square-btn {
@@ -113,140 +123,19 @@ body {
   transform: scale(1.05);
 }
 
-.add-food-btn {
-  display: block;
-  margin: auto;
-  margin-right: 10%;
-  margin-left: 5%;
-  
-}
-
-.delete-btn {
-  display: block;
-  margin: auto;
-  margin-right: 25%;
-  margin-left: 5%;
-  cursor: pointer;
-  border-radius: 12px;
-}
-
-h1 {
-  letter-spacing: 1px;
-  margin: 0;
-}
-h2 {
-  text-align: center;
-}
 th {
   table-layout: fixed;
   width: 100px;
   text-align: center;
-  border-bottom: 1px solid #bbb;
+  border-bottom: 1px solid white;
   padding-bottom: 10px;
   margin: 40px 0 10px;
 }
 
 tr {
   text-align: center;
+  font-weight: bold;
 }
 
-h4 {
-  margin: 0;
-  text-transform: uppercase;
-}
 
-.inc-exp-container {
-  background-color: #fff;
-  box-shadow: var(--box-shadow);
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
-}
 
-.inc-exp-container > div {
-  flex: 1;
-  text-align: center;
-}
-
-.inc-exp-container > div:first-of-type {
-  border-right: 1px solid #dedede;
-}
-
-label {
-  display: inline-block;
-  margin: 10px 0;
-}
-
-input[type='text'],
-input[type='number'] {
-  border: 1px solid #dedede;
-  border-radius: 2px;
-  display: block;
-  font-size: 16px;
-  padding: 10px;
-  width: 100%;
-}
-
-.btn {
-  cursor: pointer;
-  background-color: #9c88ff;
-  box-shadow: var(--box-shadow);
-  color: #fff;
-  border: 0;
-  display: block;
-  font-size: 16px;
-  margin: 10px 0 30px;
-  padding: 10px;
-  width: 100%;
-}
-
-.btn:focus,
-.delete-btn:focus {
-  outline: 0;
-}
-
-.list {
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: 40px;
-}
-
-.list li {
-  background-color: #fff;
-  box-shadow: var(--box-shadow);
-  color: #333;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  padding: 10px;
-  margin: 10px 0;
-}
-
-.list li.plus {
-  border-right: 5px solid #2ecc71;
-}
-
-.list li.minus {
-  border-right: 5px solid #c0392b;
-}
-
-/* .delete-btn {
-  cursor: pointer;
-  background-color: #e74c3c;
-  border: 0;
-  color: #fff;
-  font-size: 20px;
-  line-height: 20px;
-  padding: 2px 5px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(-100%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-} */
-
-.list li:hover .delete-btn {
-  opacity: 1;
-}

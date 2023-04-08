@@ -16,7 +16,8 @@ export const Exercise = () => {
                 <input type="number" max='100000' min='0' onChange={(event) => setExercise(event.target.value)} placeholder='Calories burned during exercise' />
                 <button id='addExerciseButton' className='square-btn' onClick={exercise ? () => addExercise(parseFloat(exercise)): null}>
                     Add
-                </button>    
+                </button>
+                
             </div>
         </>
     )
