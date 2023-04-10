@@ -12,7 +12,7 @@ export const AddFood = () => {
         event.preventDefault();
 
         const params = {
-            apiKey: 'mxN2XdffgVKgdQGEiuERj5otztH0jbRGz1Nfaq0T',
+            apiKey: process.env.REACT_APP_API_KEY,
             query: text, 
             pageSize: '10'
         };
