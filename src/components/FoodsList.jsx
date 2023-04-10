@@ -11,7 +11,7 @@ export const FoodsList = () => {
   
   return (
     <>
-        <h3>Foods Consumed Today</h3>
+        <h2>Foods Consumed Today</h2>
         
           <div className='grid-container'>
             {foodsList.length > 0 ? listedFoods : 'Search a food and add it below.'}

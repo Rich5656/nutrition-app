@@ -24,7 +24,7 @@ export const DailyCaloriesCalculation = () => {
 
   return (
     <>
-        <h3>Calculate Daily Calorie Limit</h3>
+        <h2>Calculate Daily Calorie Limit</h2>
         <div className='calories-calculation-container'>
           <div className='calculation-column-left'>
             <input type="number" max='150' min='0' value={age} onChange={(event) => setAge(event.target.value)} placeholder='Age (yrs.)' />

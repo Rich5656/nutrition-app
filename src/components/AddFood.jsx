@@ -39,7 +39,7 @@ export const AddFood = () => {
     
     return (
         <div>
-            <h3>Add Food</h3>
+            <h2>Add Food</h2>
             <input type="text" value={text} onChange={(event) => setText(event.target.value)} placeholder='Look up a food (ex. cookies)' />
             <button className='square-btn' onClick={event => searchFood(event)}>Search</button>
             <div className='grid-container'>
