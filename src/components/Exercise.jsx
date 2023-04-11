@@ -17,7 +17,6 @@ export const Exercise = () => {
                 <button id='addExerciseButton' className='square-btn' onClick={exercise ? () => addExercise(parseFloat(exercise)): null}>
                     Add
                 </button>
-                
             </div>
         </>
     )
