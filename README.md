@@ -3,7 +3,7 @@
 Nutrition Tracker is an application built with React.js that allows a user to calculate their daily calorie limit, track the foods that the have consumed for the day, and track the amount of calories that they have burned during exercise for the day. All of the user inputs are tracked and displayed in a table to let the user clearly understand the status of their nutrition for the day.
 
 ## Screenshots
-![](https://github.com/nutrition-app/nutrition-app-video.gif)
+![](https://github.com/Rich5656/nutrition-app/nutrition-app-video.gif)
 
 
 ## Motivation
