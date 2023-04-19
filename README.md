@@ -2,13 +2,17 @@
 
 Nutrition Tracker is an application built with React.js that allows a user to calculate their daily calorie limit, track the foods that the have consumed for the day, and track the amount of calories that they have burned during exercise for the day. All of the user inputs are tracked and displayed in a table to let the user clearly understand the status of their nutrition for the day.
 
-## Screenshots
+## Demo
 ![GIF Demo](https://github.com/Rich5656/nutrition-app/blob/main/nutrition-app-video.gif)
 
+## Functionality
+- __Calculating Daily Calorie Limit:__ Daily calorie limits are arrived at using the revised Harris-Benedict equation and represent the amount of calories that are needed to maintain current weight.
+- __Food Search Data:__ The data returned from the food search functionality is served by the [USDA API](https://www.ers.usda.gov/developer/data-apis/).
+- __Adding Exercise:__ Exercise can be added to the tracker by supplying positive integer values. If you need to decrease the exercise value in the tracker, it also supports negative integer values so adjustments can be made as needed.
 
 ## Motivation
 
-I recently took an interest in getting better at tracking my caloric intake and was using a mobile app to do this. One day when using the app I thought that it would be fun to try to build something similar with React, so that's what I did!
+I recently took an interest in getting better at tracking my caloric intake and was using a mobile app to do this. However the app was almost bogged down with too many features for my taste. I wanted something that was more bare-bones and straightforward, so I thought that it would be fun to try to build something similar with React!
 
 ## Technologies Used
 
