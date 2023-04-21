@@ -12,7 +12,7 @@ Nutrition Tracker is an application built with React.js that allows a user to ca
 
 ## Motivation
 
-I recently took an interest in getting better at tracking my caloric intake and was using a mobile app to do this. However the app was almost bogged down with too many features for my taste. I wanted something that was more bare-bones and straightforward, so I thought that it would be fun to try to build something similar with React!
+I recently took an interest in getting better at tracking my caloric intake and was using a mobile app to do this. However the mobile app was bogged down with too many features for my taste. I wanted something that was more bare-bones and straightforward, so I thought that it would be fun to try to build something similar with React!
 
 ## Technologies Used
 
